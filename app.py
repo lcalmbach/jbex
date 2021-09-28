@@ -4,16 +4,14 @@ Diese App erlaubt die Suche nach Jahrbüchern ab 2021, welche als pdf-Dateien hi
 import io
 import pandas as pd
 import streamlit as st
-from st_aggrid import AgGrid
 
 from const import *
-import tools
 import jbex_find
 
 
 __author__ = 'Lukas Calmbach'
-__version__ = '0.0.7'
-version_date = '2021-09-02'
+__version__ = '0.0.8'
+version_date = '2021-09-28'
 my_name = 'Jahrbuch Explorer'
 my_name_short = 'JBEx'
 
@@ -50,10 +48,6 @@ def get_data():
     return metadata
 
 def main():
-    """
-    Ruft vom user selektierte Menuoption aus. Jede Menuoption hat ein eigenes Module (.py file)
-    """
-
     st.set_page_config(page_title=my_name_short, page_icon='./images/favicon.png', layout='wide', initial_sidebar_state='auto') 
     st.markdown(f"### 📚 {my_name} v{__version__}""", unsafe_allow_html=True)
     metadata = get_data()
@@ -61,7 +55,6 @@ def main():
     app.show_menu()
     text = get_app_info()
     st.markdown(text, unsafe_allow_html=True)
-    st.write(123)
 
 if __name__ == '__main__':
     main()
