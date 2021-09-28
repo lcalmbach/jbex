@@ -61,6 +61,7 @@ def main():
     app.show_menu()
     text = get_app_info()
     st.markdown(text, unsafe_allow_html=True)
+    st.write(123)
 
 if __name__ == '__main__':
     main()
