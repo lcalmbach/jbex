@@ -12,7 +12,7 @@ import jbex_find
 
 
 __author__ = 'Lukas Calmbach'
-__version__ = '0.0.6'
+__version__ = '0.0.7'
 version_date = '2021-09-02'
 my_name = 'Jahrbuch Explorer'
 my_name_short = 'JBEx'

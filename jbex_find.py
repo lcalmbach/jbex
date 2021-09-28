@@ -72,8 +72,8 @@ class App():
         st.markdown('### Jahrbücher')
         text = f"Die Tabelle '{tabelle['Titel']}' wird in folgenden Jahrbüchern geführt, klicken sie auf den Link um die PDF-Datei zu öffnen:"
         st.markdown(text)
-        jb_von = int(tabelle['JB-Start'])
-        jb_bis = CURRENT_YEAR -1 if tabelle['JB-Ende'] == 'nan' else int(tabelle['JB-Ende'])
+        jb_von = int(tabelle['Daten-Start'])
+        jb_bis = CURRENT_YEAR -1 if tabelle['Daten-Ende'] == 'nan' else int(tabelle['Daten-Ende'])
         liste = ''
         for jahr in range(jb_von, jb_bis + 1):
             url = f"{URL_BASE}{jahr}.pdf"

@@ -20,5 +20,5 @@ THEMENBEREICHE = [
 '19 Kriminalität und Strafrecht',
 ]
 
-TABELLEN_FILE = './data/metadaten.csv'
+TABELLEN_FILE = './data/metadaten.txt'
 URL_BASE = 'https://charts.basleratlas.ch/zahlenspiegel/files/Stat-JB-BS-'
